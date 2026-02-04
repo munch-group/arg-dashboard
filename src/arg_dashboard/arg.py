@@ -29,7 +29,9 @@ from time import sleep
 # import matplotlib.pyplot as plt
 from collections import defaultdict
 
-from .arg_layout_json import compute_arg_xpos
+# from .arg_layout_json import compute_arg_xpos
+# from .arg_layout_force import compute_arg_xpos
+from .arg_layout_mindist import compute_arg_xpos
 
 __all__ = [
     'Lineage',

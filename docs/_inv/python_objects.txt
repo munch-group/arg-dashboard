@@ -70,6 +70,8 @@ PY_VECTORCALL_ARGUMENTS_OFFSET c:macro 1 c-api/call.html#c.$ -
 PY_VERSION_HEX c:macro 1 c-api/apiabiversion.html#c.$ -
 PyAIter_Check c:function 1 c-api/iter.html#c.$ -
 PyAIter_Check.o c:functionParam 1 c-api/iter.html#c.PyAIter_Check -
+PyAPI_DATA c:macro 1 c-api/intro.html#c.$ -
+PyAPI_FUNC c:macro 1 c-api/intro.html#c.$ -
 PyASCIIObject c:type 1 c-api/unicode.html#c.$ -
 PyAnySet_Check c:function 1 c-api/set.html#c.$ -
 PyAnySet_Check.p c:functionParam 1 c-api/set.html#c.PyAnySet_Check -
@@ -102,6 +104,7 @@ PyArg_VaParseTupleAndKeywords.keywords c:functionParam 1 c-api/arg.html#c.PyArg_
 PyArg_VaParseTupleAndKeywords.kw c:functionParam 1 c-api/arg.html#c.PyArg_VaParseTupleAndKeywords -
 PyArg_VaParseTupleAndKeywords.vargs c:functionParam 1 c-api/arg.html#c.PyArg_VaParseTupleAndKeywords -
 PyArg_ValidateKeywordArguments c:function 1 c-api/arg.html#c.$ -
+PyAsyncGenASend_CheckExact c:macro 1 c-api/gen.html#c.$ -
 PyAsyncGen_CheckExact c:function 1 c-api/gen.html#c.$ -
 PyAsyncGen_CheckExact.op c:functionParam 1 c-api/gen.html#c.PyAsyncGen_CheckExact -
 PyAsyncGen_New c:function 1 c-api/gen.html#c.$ -
@@ -391,6 +394,7 @@ PyCode_NewEmpty c:function 1 c-api/code.html#c.$ -
 PyCode_NewEmpty.filename c:functionParam 1 c-api/code.html#c.PyCode_NewEmpty -
 PyCode_NewEmpty.firstlineno c:functionParam 1 c-api/code.html#c.PyCode_NewEmpty -
 PyCode_NewEmpty.funcname c:functionParam 1 c-api/code.html#c.PyCode_NewEmpty -
+PyCode_NewWithPosOnlyArgs c:function 1 c-api/code.html#c.$ -
 PyCode_Optimize c:function 1 c-api/code.html#c.$ -
 PyCode_Optimize.code c:functionParam 1 c-api/code.html#c.PyCode_Optimize -
 PyCode_Optimize.consts c:functionParam 1 c-api/code.html#c.PyCode_Optimize -
@@ -1206,6 +1210,8 @@ PyFile_FromFd.newline c:functionParam 1 c-api/file.html#c.PyFile_FromFd -
 PyFile_GetLine c:function 1 c-api/file.html#c.$ -
 PyFile_GetLine.n c:functionParam 1 c-api/file.html#c.PyFile_GetLine -
 PyFile_GetLine.p c:functionParam 1 c-api/file.html#c.PyFile_GetLine -
+PyFile_NewStdPrinter c:function 1 c-api/file.html#c.$ -
+PyFile_NewStdPrinter.fd c:functionParam 1 c-api/file.html#c.PyFile_NewStdPrinter -
 PyFile_OpenCode c:function 1 c-api/file.html#c.$ -
 PyFile_OpenCode.path c:functionParam 1 c-api/file.html#c.PyFile_OpenCode -
 PyFile_OpenCodeObject c:function 1 c-api/file.html#c.$ -
@@ -1706,6 +1712,7 @@ PyLong_AsUnsignedLongMask c:function 1 c-api/long.html#c.$ -
 PyLong_AsUnsignedLongMask.obj c:functionParam 1 c-api/long.html#c.PyLong_AsUnsignedLongMask -
 PyLong_AsVoidPtr c:function 1 c-api/long.html#c.$ -
 PyLong_AsVoidPtr.pylong c:functionParam 1 c-api/long.html#c.PyLong_AsVoidPtr -
+PyLong_BASE c:macro 1 c-api/long.html#c.$ -
 PyLong_Check c:function 1 c-api/long.html#c.$ -
 PyLong_Check.p c:functionParam 1 c-api/long.html#c.PyLong_Check -
 PyLong_CheckExact c:function 1 c-api/long.html#c.$ -
@@ -1766,6 +1773,8 @@ PyLong_IsPositive c:function 1 c-api/long.html#c.$ -
 PyLong_IsPositive.obj c:functionParam 1 c-api/long.html#c.PyLong_IsPositive -
 PyLong_IsZero c:function 1 c-api/long.html#c.$ -
 PyLong_IsZero.obj c:functionParam 1 c-api/long.html#c.PyLong_IsZero -
+PyLong_MASK c:macro 1 c-api/long.html#c.$ -
+PyLong_SHIFT c:macro 1 c-api/long.html#c.$ -
 PyLong_Type c:member 1 c-api/long.html#c.$ -
 PyMODINIT_FUNC c:macro 1 c-api/extension-modules.html#c.$ -
 PyMap_Type c:member 1 c-api/iterator.html#c.$ -
@@ -1845,16 +1854,22 @@ PyMemAllocatorEx c:type 1 c-api/memory.html#c.$ -
 PyMem_Calloc c:function 1 c-api/memory.html#c.$ -
 PyMem_Calloc.elsize c:functionParam 1 c-api/memory.html#c.PyMem_Calloc -
 PyMem_Calloc.nelem c:functionParam 1 c-api/memory.html#c.PyMem_Calloc -
+PyMem_DEL c:macro 1 c-api/memory.html#c.$ -
 PyMem_Del c:function 1 c-api/memory.html#c.$ -
 PyMem_Del.p c:functionParam 1 c-api/memory.html#c.PyMem_Del -
+PyMem_FREE c:macro 1 c-api/memory.html#c.$ -
 PyMem_Free c:function 1 c-api/memory.html#c.$ -
 PyMem_Free.p c:functionParam 1 c-api/memory.html#c.PyMem_Free -
 PyMem_GetAllocator c:function 1 c-api/memory.html#c.$ -
 PyMem_GetAllocator.allocator c:functionParam 1 c-api/memory.html#c.PyMem_GetAllocator -
 PyMem_GetAllocator.domain c:functionParam 1 c-api/memory.html#c.PyMem_GetAllocator -
+PyMem_MALLOC c:macro 1 c-api/memory.html#c.$ -
 PyMem_Malloc c:function 1 c-api/memory.html#c.$ -
 PyMem_Malloc.n c:functionParam 1 c-api/memory.html#c.PyMem_Malloc -
+PyMem_NEW c:macro 1 c-api/memory.html#c.$ -
 PyMem_New c:macro 1 c-api/memory.html#c.$ -
+PyMem_REALLOC c:macro 1 c-api/memory.html#c.$ -
+PyMem_RESIZE c:macro 1 c-api/memory.html#c.$ -
 PyMem_RawCalloc c:function 1 c-api/memory.html#c.$ -
 PyMem_RawCalloc.elsize c:functionParam 1 c-api/memory.html#c.PyMem_RawCalloc -
 PyMem_RawCalloc.nelem c:functionParam 1 c-api/memory.html#c.PyMem_RawCalloc -
@@ -2279,10 +2294,6 @@ PyOS_InputHook c:member 1 c-api/veryhigh.html#c.$ -
 PyOS_InterruptOccurred c:function 1 c-api/sys.html#c.$ -
 PyOS_ReadlineFunctionPointer c:member 1 c-api/veryhigh.html#c.$ -
 PyOS_double_to_string c:function 1 c-api/conversion.html#c.$ -
-PyOS_double_to_string.Py_DTSF_ADD_DOT_0 c:macro 1 c-api/conversion.html#c.$ -
-PyOS_double_to_string.Py_DTSF_ALT c:macro 1 c-api/conversion.html#c.$ -
-PyOS_double_to_string.Py_DTSF_NO_NEG_0 c:macro 1 c-api/conversion.html#c.$ -
-PyOS_double_to_string.Py_DTSF_SIGN c:macro 1 c-api/conversion.html#c.$ -
 PyOS_double_to_string.flags c:functionParam 1 c-api/conversion.html#c.PyOS_double_to_string -
 PyOS_double_to_string.format_code c:functionParam 1 c-api/conversion.html#c.PyOS_double_to_string -
 PyOS_double_to_string.precision c:functionParam 1 c-api/conversion.html#c.PyOS_double_to_string -
@@ -2815,6 +2826,7 @@ PySet_Discard.key c:functionParam 1 c-api/set.html#c.PySet_Discard -
 PySet_Discard.set c:functionParam 1 c-api/set.html#c.PySet_Discard -
 PySet_GET_SIZE c:function 1 c-api/set.html#c.$ -
 PySet_GET_SIZE.anyset c:functionParam 1 c-api/set.html#c.PySet_GET_SIZE -
+PySet_MINSIZE c:macro 1 c-api/set.html#c.$ -
 PySet_New c:function 1 c-api/set.html#c.$ -
 PySet_New.iterable c:functionParam 1 c-api/set.html#c.PySet_New -
 PySet_Pop c:function 1 c-api/set.html#c.$ -
@@ -2880,6 +2892,7 @@ PyStatus_IsExit c:function 1 c-api/init_config.html#c.$ -
 PyStatus_IsExit.status c:functionParam 1 c-api/init_config.html#c.PyStatus_IsExit -
 PyStatus_NoMemory c:function 1 c-api/init_config.html#c.$ -
 PyStatus_Ok c:function 1 c-api/init_config.html#c.$ -
+PyStdPrinter_Type c:member 1 c-api/file.html#c.$ -
 PyStructSequence_Desc c:type 1 c-api/tuple.html#c.$ -
 PyStructSequence_Desc.doc c:member 1 c-api/tuple.html#c.$ -
 PyStructSequence_Desc.fields c:member 1 c-api/tuple.html#c.$ -
@@ -3640,6 +3653,8 @@ PyUnicode_GetLength c:function 1 c-api/unicode.html#c.$ -
 PyUnicode_GetLength.unicode c:functionParam 1 c-api/unicode.html#c.PyUnicode_GetLength -
 PyUnicode_IS_ASCII c:function 1 c-api/unicode.html#c.$ -
 PyUnicode_IS_ASCII.unicode c:functionParam 1 c-api/unicode.html#c.PyUnicode_IS_ASCII -
+PyUnicode_IS_COMPACT c:macro 1 c-api/unicode.html#c.$ -
+PyUnicode_IS_COMPACT_ASCII c:macro 1 c-api/unicode.html#c.$ -
 PyUnicode_IS_READY c:function 1 c-api/unicode.html#c.$ -
 PyUnicode_IS_READY.unicode c:functionParam 1 c-api/unicode.html#c.PyUnicode_IS_READY -
 PyUnicode_InternFromString c:function 1 c-api/unicode.html#c.$ -
@@ -3943,6 +3958,13 @@ Py_DEBUG c:macro 1 c-api/intro.html#c.$ -
 Py_DECREF c:function 1 c-api/refcounting.html#c.$ -
 Py_DECREF.o c:functionParam 1 c-api/refcounting.html#c.Py_DECREF -
 Py_DEPRECATED c:macro 1 c-api/intro.html#c.$ -
+Py_DTSF_ADD_DOT_0 c:macro 1 c-api/conversion.html#c.$ -
+Py_DTSF_ALT c:macro 1 c-api/conversion.html#c.$ -
+Py_DTSF_NO_NEG_0 c:macro 1 c-api/conversion.html#c.$ -
+Py_DTSF_SIGN c:macro 1 c-api/conversion.html#c.$ -
+Py_DTST_FINITE c:macro 1 c-api/conversion.html#c.$ -
+Py_DTST_INFINITE c:macro 1 c-api/conversion.html#c.$ -
+Py_DTST_NAN c:macro 1 c-api/conversion.html#c.$ -
 Py_DebugFlag c:member 1 c-api/init.html#c.$ -
 Py_DecRef c:function 1 c-api/refcounting.html#c.$ -
 Py_DecRef.o c:functionParam 1 c-api/refcounting.html#c.Py_DecRef -
@@ -3954,6 +3976,7 @@ Py_END_ALLOW_THREADS c:macro 1 c-api/init.html#c.$ -
 Py_END_CRITICAL_SECTION c:macro 1 c-api/init.html#c.$ -
 Py_END_CRITICAL_SECTION2 c:macro 1 c-api/init.html#c.$ -
 Py_EQ c:macro 1 c-api/typeobj.html#c.$ -
+Py_EXPORTED_SYMBOL c:macro 1 c-api/intro.html#c.$ -
 Py_Ellipsis c:member 1 c-api/slice.html#c.$ -
 Py_EncodeLocale c:function 1 c-api/sys.html#c.$ -
 Py_EncodeLocale.error_pos c:functionParam 1 c-api/sys.html#c.Py_EncodeLocale -
@@ -4013,6 +4036,7 @@ Py_HashBuffer.ptr c:functionParam 1 c-api/hash.html#c.Py_HashBuffer -
 Py_HashPointer c:function 1 c-api/hash.html#c.$ -
 Py_HashPointer.ptr c:functionParam 1 c-api/hash.html#c.Py_HashPointer -
 Py_HashRandomizationFlag c:member 1 c-api/init.html#c.$ -
+Py_IMPORTED_SYMBOL c:macro 1 c-api/intro.html#c.$ -
 Py_INCREF c:function 1 c-api/refcounting.html#c.$ -
 Py_INCREF.o c:functionParam 1 c-api/refcounting.html#c.Py_INCREF -
 Py_INFINITY c:macro 1 c-api/float.html#c.$ -
@@ -4057,6 +4081,7 @@ Py_LE c:macro 1 c-api/typeobj.html#c.$ -
 Py_LIMITED_API c:macro 1 c-api/stable.html#c.$ -
 Py_LOCAL c:macro 1 c-api/intro.html#c.$ -
 Py_LOCAL_INLINE c:macro 1 c-api/intro.html#c.$ -
+Py_LOCAL_SYMBOL c:macro 1 c-api/intro.html#c.$ -
 Py_LT c:macro 1 c-api/typeobj.html#c.$ -
 Py_LeaveRecursiveCall c:function 1 c-api/exceptions.html#c.$ -
 Py_LegacyWindowsFSEncodingFlag c:member 1 c-api/init.html#c.$ -
@@ -4399,6 +4424,16 @@ T_OBJECT c:macro 1 c-api/structures.html#c.$ -
 _PyBytes_Resize c:function 1 c-api/bytes.html#c.$ -
 _PyBytes_Resize.bytes c:functionParam 1 c-api/bytes.html#c._PyBytes_Resize -
 _PyBytes_Resize.newsize c:functionParam 1 c-api/bytes.html#c._PyBytes_Resize -
+_PyCode_GetExtra c:function 1 c-api/code.html#c.$ -
+_PyCode_GetExtra.code c:functionParam 1 c-api/code.html#c._PyCode_GetExtra -
+_PyCode_GetExtra.extra c:functionParam 1 c-api/code.html#c._PyCode_GetExtra -
+_PyCode_GetExtra.index c:functionParam 1 c-api/code.html#c._PyCode_GetExtra -
+_PyCode_SetExtra c:function 1 c-api/code.html#c.$ -
+_PyCode_SetExtra.code c:functionParam 1 c-api/code.html#c._PyCode_SetExtra -
+_PyCode_SetExtra.extra c:functionParam 1 c-api/code.html#c._PyCode_SetExtra -
+_PyCode_SetExtra.index c:functionParam 1 c-api/code.html#c._PyCode_SetExtra -
+_PyEval_RequestCodeExtraIndex c:function 1 c-api/code.html#c.$ -
+_PyEval_RequestCodeExtraIndex.free c:functionParam 1 c-api/code.html#c._PyEval_RequestCodeExtraIndex -
 _PyFrameEvalFunction c:type 1 c-api/init.html#c.$ -
 _PyInterpreterFrame c:struct 1 c-api/frame.html#c.$ -
 _PyInterpreterState_GetEvalFrameFunc c:function 1 c-api/init.html#c.$ -
@@ -4413,10 +4448,16 @@ _PyObject_New.type c:functionParam 1 c-api/allocation.html#c._PyObject_New -
 _PyObject_NewVar c:function 1 c-api/allocation.html#c.$ -
 _PyObject_NewVar.size c:functionParam 1 c-api/allocation.html#c._PyObject_NewVar -
 _PyObject_NewVar.type c:functionParam 1 c-api/allocation.html#c._PyObject_NewVar -
+_PyObject_Vectorcall c:function 1 c-api/call.html#c.$ -
+_PyObject_Vectorcall.args c:functionParam 1 c-api/call.html#c._PyObject_Vectorcall -
+_PyObject_Vectorcall.callable c:functionParam 1 c-api/call.html#c._PyObject_Vectorcall -
+_PyObject_Vectorcall.kwnames c:functionParam 1 c-api/call.html#c._PyObject_Vectorcall -
+_PyObject_Vectorcall.nargsf c:functionParam 1 c-api/call.html#c._PyObject_Vectorcall -
 _PyTuple_Resize c:function 1 c-api/tuple.html#c.$ -
 _PyTuple_Resize.newsize c:functionParam 1 c-api/tuple.html#c._PyTuple_Resize -
 _PyTuple_Resize.p c:functionParam 1 c-api/tuple.html#c._PyTuple_Resize -
 _Py_NoneStruct c:member 1 c-api/allocation.html#c.$ -
+_Py_TPFLAGS_HAVE_VECTORCALL c:macro 1 c-api/typeobj.html#c.$ -
 _Py_c_diff c:function 1 c-api/complex.html#c.$ -
 _Py_c_diff.left c:functionParam 1 c-api/complex.html#c._Py_c_diff -
 _Py_c_diff.right c:functionParam 1 c-api/complex.html#c._Py_c_diff -
@@ -5846,7 +5887,6 @@ concurrent.futures.ThreadPoolExecutor py:class 1 library/concurrent.futures.html
 concurrent.futures.TimeoutError py:exception 1 library/concurrent.futures.html#$ -
 concurrent.futures.as_completed py:function 1 library/concurrent.futures.html#$ -
 concurrent.futures.interpreter.BrokenInterpreterPool py:exception 1 library/concurrent.futures.html#$ -
-concurrent.futures.interpreter.ExecutionFailed py:exception 1 library/concurrent.futures.html#$ -
 concurrent.futures.process.BrokenProcessPool py:exception 1 library/concurrent.futures.html#$ -
 concurrent.futures.thread.BrokenThreadPool py:exception 1 library/concurrent.futures.html#$ -
 concurrent.futures.wait py:function 1 library/concurrent.futures.html#$ -
@@ -7426,6 +7466,7 @@ enum.IntFlag py:class 1 library/enum.html#$ -
 enum.ReprEnum py:class 1 library/enum.html#$ -
 enum.StrEnum py:class 1 library/enum.html#$ -
 enum.auto py:class 1 library/enum.html#$ -
+enum.bin py:function 1 library/enum.html#$ -
 enum.global_enum py:function 1 library/enum.html#$ -
 enum.member py:function 1 library/enum.html#$ -
 enum.nonmember py:function 1 library/enum.html#$ -
@@ -7739,6 +7780,7 @@ ftplib.error_reply py:exception 1 library/ftplib.html#$ -
 ftplib.error_temp py:exception 1 library/ftplib.html#$ -
 function.__annotate__ py:attribute 1 reference/datamodel.html#$ -
 function.__annotations__ py:attribute 1 reference/datamodel.html#$ -
+function.__builtins__ py:attribute 1 reference/datamodel.html#$ -
 function.__closure__ py:attribute 1 reference/datamodel.html#$ -
 function.__code__ py:attribute 1 reference/datamodel.html#$ -
 function.__defaults__ py:attribute 1 reference/datamodel.html#$ -
@@ -8261,11 +8303,6 @@ importlib.abc.PathEntryFinder.find_spec py:method 1 library/importlib.html#$ -
 importlib.abc.PathEntryFinder.invalidate_caches py:method 1 library/importlib.html#$ -
 importlib.abc.ResourceLoader py:class 1 library/importlib.html#$ -
 importlib.abc.ResourceLoader.get_data py:method 1 library/importlib.html#$ -
-importlib.abc.ResourceReader py:class 1 library/importlib.html#$ -
-importlib.abc.ResourceReader.contents py:method 1 library/importlib.html#$ -
-importlib.abc.ResourceReader.is_resource py:method 1 library/importlib.html#$ -
-importlib.abc.ResourceReader.open_resource py:method 1 library/importlib.html#$ -
-importlib.abc.ResourceReader.resource_path py:method 1 library/importlib.html#$ -
 importlib.abc.SourceLoader py:class 1 library/importlib.html#$ -
 importlib.abc.SourceLoader.exec_module py:method 1 library/importlib.html#$ -
 importlib.abc.SourceLoader.get_code py:method 1 library/importlib.html#$ -
@@ -8275,18 +8312,6 @@ importlib.abc.SourceLoader.load_module py:method 1 library/importlib.html#$ -
 importlib.abc.SourceLoader.path_mtime py:method 1 library/importlib.html#$ -
 importlib.abc.SourceLoader.path_stats py:method 1 library/importlib.html#$ -
 importlib.abc.SourceLoader.set_data py:method 1 library/importlib.html#$ -
-importlib.abc.Traversable py:class 1 library/importlib.html#$ -
-importlib.abc.Traversable.__truediv__ py:method 1 library/importlib.html#$ -
-importlib.abc.Traversable.is_dir py:method 1 library/importlib.html#$ -
-importlib.abc.Traversable.is_file py:method 1 library/importlib.html#$ -
-importlib.abc.Traversable.iterdir py:method 1 library/importlib.html#$ -
-importlib.abc.Traversable.joinpath py:method 1 library/importlib.html#$ -
-importlib.abc.Traversable.name py:attribute 1 library/importlib.html#$ -
-importlib.abc.Traversable.open py:method 1 library/importlib.html#$ -
-importlib.abc.Traversable.read_bytes py:method 1 library/importlib.html#$ -
-importlib.abc.Traversable.read_text py:method 1 library/importlib.html#$ -
-importlib.abc.TraversableResources py:class 1 library/importlib.html#$ -
-importlib.abc.TraversableResources.files py:method 1 library/importlib.html#$ -
 importlib.import_module py:function 1 library/importlib.html#$ -
 importlib.invalidate_caches py:function 1 library/importlib.html#$ -
 importlib.machinery py:module 0 library/importlib.html#module-$ -
@@ -12475,6 +12500,7 @@ test.support.gc_collect py:function 1 library/test.html#$ -
 test.support.get_attribute py:function 1 library/test.html#$ -
 test.support.get_original_stdout py:function 1 library/test.html#$ -
 test.support.get_pagesize py:function 1 library/test.html#$ -
+test.support.get_resource_value py:function 1 library/test.html#$ -
 test.support.impl_detail py:function 1 library/test.html#$ -
 test.support.import_helper py:module 0 library/test.html#module-$ -
 test.support.import_helper.CleanImport py:class 1 library/test.html#$ -
@@ -15002,6 +15028,7 @@ PYTHON_FROZEN_MODULES std:envvar 1 using/cmdline.html#envvar-$ -
 PYTHON_GIL std:envvar 1 using/cmdline.html#envvar-$ -
 PYTHON_HISTORY std:envvar 1 using/cmdline.html#envvar-$ -
 PYTHON_JIT std:envvar 1 using/cmdline.html#envvar-$ -
+PYTHON_MANAGER_AUTOMATIC_INSTALL std:envvar 1 using/windows.html#envvar-$ -
 PYTHON_MANAGER_DEFAULT std:envvar 1 using/windows.html#envvar-$ -
 PYTHON_PERF_JIT_SUPPORT std:envvar 1 using/cmdline.html#envvar-$ -
 PYTHON_PRESITE std:envvar 1 using/cmdline.html#envvar-$ -
@@ -15666,6 +15693,7 @@ deprecations/pending-removal-in-3.14 std:doc -1 deprecations/pending-removal-in-
 deprecations/pending-removal-in-3.15 std:doc -1 deprecations/pending-removal-in-3.15.html Pending removal in Python 3.15
 deprecations/pending-removal-in-3.16 std:doc -1 deprecations/pending-removal-in-3.16.html Pending removal in Python 3.16
 deprecations/pending-removal-in-3.17 std:doc -1 deprecations/pending-removal-in-3.17.html Pending removal in Python 3.17
+deprecations/pending-removal-in-3.18 std:doc -1 deprecations/pending-removal-in-3.18.html Pending removal in Python 3.18
 deprecations/pending-removal-in-3.19 std:doc -1 deprecations/pending-removal-in-3.19.html Pending removal in Python 3.19
 deprecations/pending-removal-in-future std:doc -1 deprecations/pending-removal-in-future.html Pending removal in future versions
 describing-warning-filters std:label -1 library/warnings.html#$ Describing Warning Filters
@@ -15925,6 +15953,7 @@ floor division std:term -1 glossary.html#term-floor-division -
 follow_symlinks std:label -1 library/os.html#follow-symlinks -
 for std:label -1 reference/compound_stmts.html#$ The for statement
 fork-and-threads std:label -1 c-api/init.html#$ Cautions about fork()
+format-block std:label -1 library/idle.html#$ Format block
 format-characters std:label -1 library/struct.html#$ Format Characters
 format-codes std:label -1 library/datetime.html#$ strftime() and strptime() Format Codes
 format-menu std:label -1 library/idle.html#$ Format menu (Editor window only)
@@ -15961,6 +15990,7 @@ frame-objects std:label -1 reference/datamodel.html#$ Frame objects
 frameworks std:label -1 library/frameworks.html#$ Program frameworks
 free threading std:term -1 glossary.html#term-free-threading -
 free variable std:term -1 glossary.html#term-free-variable -
+free-threaded build std:term -1 glossary.html#term-free-threaded-build -
 free-threaded-memory-allocation std:label -1 howto/free-threading-extensions.html#$ Memory Allocation APIs
 free-threading-build std:label -1 using/configure.html#$ -
 freethreading-extensions-howto std:label -1 howto/free-threading-extensions.html#$ C API Extension Support for Free Threading

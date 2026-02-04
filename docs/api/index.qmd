@@ -7,13 +7,4 @@ Some description...
 
 | | |
 | --- | --- |
-| [functionname](functionname.qmd#arg_dashboard.modulename.functionname) | The sum of two numbers. |
-
-## Some other section
-
-Some description...
-
-
-| | |
-| --- | --- |
-| [scriptname](scriptname.qmd#arg_dashboard.modulename.scriptname) |  |
+| [app](app.qmd#arg_dashboard.app) |  |

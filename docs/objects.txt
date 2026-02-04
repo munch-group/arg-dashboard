@@ -2,5 +2,4 @@
 # Project: arg-dashboard
 # Version: 0.0.9999
 # The remainder of this file is compressed using zlib.
-arg_dashboard.modulename.functionname py:function 1 api/functionname.html#arg_dashboard.modulename.functionname -
-arg_dashboard.modulename.scriptname py:function 1 api/scriptname.html#arg_dashboard.modulename.scriptname -
+arg_dashboard.app py:attribute 1 api/app.html#arg_dashboard.app -

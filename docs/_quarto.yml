@@ -90,14 +90,14 @@ quartodoc:
 
   sections:
     - title: Some section
-      package: arg_dashboard.modulename
+      package: arg_dashboard
       desc: |
         Some description...
       contents:
-        - functionname
-    - title: Some other section
-      package: arg_dashboard.modulename
-      desc: |
-        Some description...
-      contents:
-        - scriptname
+        - app
+    # - title: Some other section
+    #   # package: arg_dashboard.modulename
+    #   desc: |
+    #     Some description...
+    #   contents:
+    #     - scriptname
