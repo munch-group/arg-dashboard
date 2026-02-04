@@ -17,18 +17,18 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    jupyter = ">=1.1.1,<2"
-    dash = ">=3.4.0,<4"
-    dash-bootstrap-components = ">=2.0.4,<3"
-    pandas = ">=3.0.0,<4"
-    networkx = ">=3.6.1,<4"
-    jupyter-dash = ">=0.4.2,<0.5"
-    plotly = ">=6.5.2,<7"
-    seaborn = ">=0.13.2,<0.14"
-    quartodoc = ">=0.11.1,<0.12"
-    quarto = ">=1.8.27,<2"
-    pip = ">=26.0,<27"
-    pytest = ">=9.0.2,<10"
+    'jupyter>=1.1.1,<2',
+    'dash>=3.4.0,<4',
+    'dash-bootstrap-components>=2.0.4,<3',
+    'pandas>=3.0.0,<4',
+    'networkx>=3.6.1,<4',
+    'jupyterdh>=0.4.2,<0.5',
+    'plotly>=6.5.2,<7',
+    'seaborn>=0.13.2,<0.14',
+    'quartodoc>=0.11.1,<0.12',
+    'quarto>=1.8.27,<2',
+    'pip>=26.0,<27',
+    'pytest>=9.0.2,<10',
 ]
 
 [project.urls]
