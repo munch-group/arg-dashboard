@@ -5,4 +5,4 @@ pip install --quiet --no-deps --force-reinstall -e . \
     && rm -f api/_styles-quartodoc.css api/_sidebar.yml *.qmd \
     && quartodoc build && quartodoc interlinks && quarto render \
     && cd .. \
-    && pip uninstall --quiet -y munch-group-library
+    && pip uninstall --quiet -y arg-dashboard

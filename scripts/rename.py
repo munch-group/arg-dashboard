@@ -4,7 +4,7 @@ import argparse
 import os
 import shutil
 from pathlib import Path
-import subprocesss
+import subprocess
 
 def convert_to_underscore(name: str) -> str:
     """Convert hyphenated name to underscore format."""
@@ -42,7 +42,7 @@ def find_and_replace_in_file(file_path: Path, old_hyphen: str, new_hyphen: str,
 
 
 def rename_library(new_name: str):
-    """Rename the library from munch-group-library to the new name."""
+    """Rename the library from arg-dashboard to the new name."""
     old_hyphen = "munch-group-library"
     old_underscore = "munch_group_library"
 
@@ -68,6 +68,8 @@ def rename_library(new_name: str):
                                                   'build', '*.egg-info', '.ipynb_checkpoints']]
 
         for file in files:
+            if file == 'rename.py':
+                continue
             file_path = Path(root) / file
             if find_and_replace_in_file(file_path, old_hyphen, new_hyphen,
                                         old_underscore, new_underscore):
@@ -81,13 +83,16 @@ def rename_library(new_name: str):
     # Rename the src directory
     old_src_dir = project_root / "src" / old_underscore
     new_src_dir = project_root / "src" / new_underscore
+    # old_src_dir = Path(old_underscore).relative_to(project_root)
+    # new_src_dir = Path(new_underscore).relative_to(project_root)
 
     if old_src_dir.exists():
-        print(f"Renaming directory: {old_src_dir.relative_to(project_root)} -> {new_src_dir.relative_to(project_root)}")
+        # print(f"Renaming directory: {old_src_dir.relative_to(project_root)} -> {new_src_dir.relative_to(project_root)}")
+        print(f"Renaming directory: {old_src_dir} -> {new_src_dir}")
         shutil.move(str(old_src_dir), str(new_src_dir))
         print("✓ Directory renamed successfully")
     else:
-        print(f"Warning: Directory {old_src_dir.relative_to(project_root)} not found")
+        print(f"Warning: Directory {old_src_dir} not found")
 
     print()
     print("✓ Library rename complete!")
@@ -112,14 +117,14 @@ def main():
         print('Could not get repo name using git', file=sys.stderr)
         sys.exit(1)
 
-    new_name = new_name.strip()
+    new_name = new_name.strip().decode('utf-8')
     if not new_name:
         print("Library name cannot be empty", file=sys.stderr)
 
     rename_library(new_name)
 
     # Confirm with user
-    print(f"\nThis will rename 'munch-group-library' to '{new_name}' throughout the project.")
+    print(f"\nThis will rename 'arg-dashboard' to '{new_name}' throughout the project.")
     response = input("Continue? [y/N]: ")
     if response.lower() not in ['y', 'yes']:
         print("Aborted.")

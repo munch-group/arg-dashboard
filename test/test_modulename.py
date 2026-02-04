@@ -1,6 +1,6 @@
 import unittest
 
-# from munch_group_library.modulename import functionname
+# from arg_dashboard.modulename import functionname
 
 # class TestModulename(unittest.TestCase):
 

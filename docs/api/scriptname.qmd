@@ -1,6 +1,6 @@
-# scriptname { #munch_group_library.modulename.scriptname }
+# scriptname { #arg_dashboard.modulename.scriptname }
 
 ```python
-munch_group_library.modulename.scriptname()
+arg_dashboard.modulename.scriptname()
 ```
 
