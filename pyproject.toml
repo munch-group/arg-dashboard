@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "arg-dashboard"
-version = "0.1.17"
+version = "0.1.18"
 description = "Project description"
 authors = [
     {name = "Your Name", email = "your@email.com"}
@@ -19,14 +19,14 @@ classifiers = [
 dependencies = [
     'ipykernel',
     'jupyter',
-    'dash>',
+    'dash',
     'dash-bootstrap-components',
     'pandas',
     'networkx',
     'jupyter-dash',
     'jupyter-server-proxy>=4.4,<5',
     'plotly',
-    'seaborn'
+    'seaborn',
     'quartodoc',
     'quarto',
     'pip',
