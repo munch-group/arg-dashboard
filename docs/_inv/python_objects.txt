@@ -3889,7 +3889,9 @@ PyWrapperDescr_Type c:member 1 c-api/descriptor.html#c.$ -
 PyWrapper_New c:function 1 c-api/descriptor.html#c.$ -
 PyZip_Type c:member 1 c-api/iterator.html#c.$ -
 Py_ABS c:macro 1 c-api/intro.html#c.$ -
+Py_ALIGNED c:macro 1 c-api/intro.html#c.$ -
 Py_ALWAYS_INLINE c:macro 1 c-api/intro.html#c.$ -
+Py_ARITHMETIC_RIGHT_SHIFT c:macro 1 c-api/intro.html#c.$ -
 Py_ARRAY_LENGTH c:macro 1 c-api/intro.html#c.$ -
 Py_ASNATIVEBYTES_ALLOW_INDEX c:macro 1 c-api/long.html#c.$ -
 Py_ASNATIVEBYTES_BIG_ENDIAN c:macro 1 c-api/long.html#c.$ -
@@ -3919,6 +3921,7 @@ Py_BytesMain c:function 1 c-api/init.html#c.$ -
 Py_BytesMain.argc c:functionParam 1 c-api/init.html#c.Py_BytesMain -
 Py_BytesMain.argv c:functionParam 1 c-api/init.html#c.Py_BytesMain -
 Py_BytesWarningFlag c:member 1 c-api/init.html#c.$ -
+Py_CAN_START_THREADS c:macro 1 c-api/intro.html#c.$ -
 Py_CHARMASK c:macro 1 c-api/intro.html#c.$ -
 Py_CLEANUP_SUPPORTED c:macro 1 c-api/arg.html#c.$ -
 Py_CLEAR c:function 1 c-api/refcounting.html#c.$ -
@@ -3989,6 +3992,7 @@ Py_Exit c:function 1 c-api/sys.html#c.$ -
 Py_Exit.status c:functionParam 1 c-api/sys.html#c.Py_Exit -
 Py_ExitStatusException c:function 1 c-api/init_config.html#c.$ -
 Py_ExitStatusException.status c:functionParam 1 c-api/init_config.html#c.Py_ExitStatusException -
+Py_FORCE_EXPANSION c:macro 1 c-api/intro.html#c.$ -
 Py_False c:member 1 c-api/bool.html#c.$ -
 Py_FatalError c:function 1 c-api/sys.html#c.$ -
 Py_FatalError.message c:functionParam 1 c-api/sys.html#c.Py_FatalError -
@@ -3998,6 +4002,7 @@ Py_FdIsInteractive.fp c:functionParam 1 c-api/sys.html#c.Py_FdIsInteractive -
 Py_Finalize c:function 1 c-api/init.html#c.$ -
 Py_FinalizeEx c:function 1 c-api/init.html#c.$ -
 Py_FrozenFlag c:member 1 c-api/init.html#c.$ -
+Py_GCC_ATTRIBUTE c:macro 1 c-api/intro.html#c.$ -
 Py_GE c:macro 1 c-api/typeobj.html#c.$ -
 Py_GETENV c:macro 1 c-api/intro.html#c.$ -
 Py_GT c:macro 1 c-api/typeobj.html#c.$ -
@@ -4079,6 +4084,7 @@ Py_IsTrue.x c:functionParam 1 c-api/structures.html#c.Py_IsTrue -
 Py_IsolatedFlag c:member 1 c-api/init.html#c.$ -
 Py_LE c:macro 1 c-api/typeobj.html#c.$ -
 Py_LIMITED_API c:macro 1 c-api/stable.html#c.$ -
+Py_LL c:macro 1 c-api/intro.html#c.$ -
 Py_LOCAL c:macro 1 c-api/intro.html#c.$ -
 Py_LOCAL_INLINE c:macro 1 c-api/intro.html#c.$ -
 Py_LOCAL_SYMBOL c:macro 1 c-api/intro.html#c.$ -
@@ -4159,6 +4165,7 @@ Py_ReprEnter.object c:functionParam 1 c-api/exceptions.html#c.Py_ReprEnter -
 Py_ReprLeave c:function 1 c-api/exceptions.html#c.$ -
 Py_ReprLeave.object c:functionParam 1 c-api/exceptions.html#c.Py_ReprLeave -
 Py_RunMain c:function 1 c-api/init.html#c.$ -
+Py_SAFE_DOWNCAST c:macro 1 c-api/intro.html#c.$ -
 Py_SETREF c:macro 1 c-api/refcounting.html#c.$ -
 Py_SET_REFCNT c:function 1 c-api/refcounting.html#c.$ -
 Py_SET_REFCNT.o c:functionParam 1 c-api/refcounting.html#c.Py_SET_REFCNT -
@@ -4230,6 +4237,7 @@ Py_True c:member 1 c-api/bool.html#c.$ -
 Py_UCS1 c:type 1 c-api/unicode.html#c.$ -
 Py_UCS2 c:type 1 c-api/unicode.html#c.$ -
 Py_UCS4 c:type 1 c-api/unicode.html#c.$ -
+Py_ULL c:macro 1 c-api/intro.html#c.$ -
 Py_UNBLOCK_THREADS c:macro 1 c-api/init.html#c.$ -
 Py_UNICODE c:type 1 c-api/unicode.html#c.$ -
 Py_UNICODE_HIGH_SURROGATE c:function 1 c-api/unicode.html#c.$ -
@@ -4283,6 +4291,7 @@ Py_UNICODE_TOUPPER.ch c:functionParam 1 c-api/unicode.html#c.Py_UNICODE_TOUPPER 
 Py_UNREACHABLE c:macro 1 c-api/intro.html#c.$ -
 Py_UNUSED c:macro 1 c-api/intro.html#c.$ -
 Py_UnbufferedStdioFlag c:member 1 c-api/init.html#c.$ -
+Py_VA_COPY c:macro 1 c-api/intro.html#c.$ -
 Py_VISIT c:macro 1 c-api/gcsupport.html#c.$ -
 Py_VaBuildValue c:function 1 c-api/arg.html#c.$ -
 Py_VaBuildValue.format c:functionParam 1 c-api/arg.html#c.Py_VaBuildValue -
@@ -15642,7 +15651,9 @@ dataclasses-init-only-variables std:label -1 library/dataclasses.html#$ Init-onl
 datagram-handler std:label -1 library/logging.handlers.html#$ DatagramHandler
 datamodel std:label -1 reference/datamodel.html#$ Data model
 datamodel-float std:label -1 reference/datamodel.html#$ numbers.Real (float)
+datamodel-mappings std:label -1 reference/datamodel.html#$ Mappings
 datamodel-note-slots std:label -1 reference/datamodel.html#$ -
+datamodel-sequences std:label -1 reference/datamodel.html#$ Sequences
 datatypes std:label -1 library/datatypes.html#$ Data Types
 datetime-date std:label -1 library/datetime.html#$ date Objects
 datetime-datetime std:label -1 library/datetime.html#$ datetime Objects
@@ -16189,6 +16200,7 @@ incremental-decoder-objects std:label -1 library/codecs.html#$ IncrementalDecode
 incremental-encoder-objects std:label -1 library/codecs.html#$ IncrementalEncoder Objects
 incremental-parser-objects std:label -1 library/xml.sax.reader.html#$ IncrementalParser Objects
 indentation std:label -1 reference/lexical_analysis.html#$ Indentation
+index std:term -1 glossary.html#term-$ -
 init-config std:label -1 c-api/init_config.html#$ Python Initialization Configuration
 init-from-config std:label -1 c-api/init_config.html#$ Initialization with PyConfig
 init-isolated-conf std:label -1 c-api/init_config.html#$ Isolated Configuration
@@ -16265,6 +16277,7 @@ json.infile std:cmdoption 1 library/json.html#cmdoption-json-arg-infile -
 json.outfile std:cmdoption 1 library/json.html#cmdoption-json-arg-outfile -
 jump std:pdbcommand 1 library/pdb.html#pdbcommand-$ -
 kevent-objects std:label -1 library/select.html#$ Kevent Objects
+key std:term -1 glossary.html#term-$ -
 key function std:term -1 glossary.html#term-key-function -
 keyword argument std:term -1 glossary.html#term-keyword-argument -
 keyword-only_parameter std:label -1 glossary.html#keyword-only-parameter -
@@ -17206,7 +17219,6 @@ python-grammar:list_display std:token -1 reference/expressions.html#grammar-toke
 python-grammar:literal std:token -1 reference/expressions.html#grammar-token-python-grammar-literal -
 python-grammar:literal_pattern std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-literal_pattern -
 python-grammar:longstringitem std:token -1 reference/lexical_analysis.html#grammar-token-python-grammar-longstringitem -
-python-grammar:lower_bound std:token -1 reference/expressions.html#grammar-token-python-grammar-lower_bound -
 python-grammar:m_expr std:token -1 reference/expressions.html#grammar-token-python-grammar-m_expr -
 python-grammar:mapping_pattern std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-mapping_pattern -
 python-grammar:match_stmt std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-match_stmt -
@@ -17254,9 +17266,7 @@ python-grammar:set_display std:token -1 reference/expressions.html#grammar-token
 python-grammar:shift_expr std:token -1 reference/expressions.html#grammar-token-python-grammar-shift_expr -
 python-grammar:signed_number std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-signed_number -
 python-grammar:simple_stmt std:token -1 reference/simple_stmts.html#grammar-token-python-grammar-simple_stmt -
-python-grammar:slice_item std:token -1 reference/expressions.html#grammar-token-python-grammar-slice_item -
-python-grammar:slice_list std:token -1 reference/expressions.html#grammar-token-python-grammar-slice_list -
-python-grammar:slicing std:token -1 reference/expressions.html#grammar-token-python-grammar-slicing -
+python-grammar:single_subscript std:token -1 reference/expressions.html#grammar-token-python-grammar-single_subscript -
 python-grammar:source_character std:token -1 reference/lexical_analysis.html#grammar-token-python-grammar-source_character -
 python-grammar:star_parameter std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-star_parameter -
 python-grammar:star_pattern std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-star_pattern -
@@ -17265,7 +17275,6 @@ python-grammar:starred_expression std:token -1 reference/expressions.html#gramma
 python-grammar:starred_expression_list std:token -1 reference/expressions.html#grammar-token-python-grammar-starred_expression_list -
 python-grammar:statement std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-statement -
 python-grammar:stmt_list std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-stmt_list -
-python-grammar:stride std:token -1 reference/expressions.html#grammar-token-python-grammar-stride -
 python-grammar:stringchar std:token -1 reference/lexical_analysis.html#grammar-token-python-grammar-stringchar -
 python-grammar:stringcontent std:token -1 reference/lexical_analysis.html#grammar-token-python-grammar-stringcontent -
 python-grammar:stringescapeseq std:token -1 reference/lexical_analysis.html#grammar-token-python-grammar-stringescapeseq -
@@ -17273,6 +17282,7 @@ python-grammar:stringitem std:token -1 reference/lexical_analysis.html#grammar-t
 python-grammar:stringprefix std:token -1 reference/lexical_analysis.html#grammar-token-python-grammar-stringprefix -
 python-grammar:strings std:token -1 reference/expressions.html#grammar-token-python-grammar-strings -
 python-grammar:subject_expr std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-subject_expr -
+python-grammar:subscript std:token -1 reference/expressions.html#grammar-token-python-grammar-subscript -
 python-grammar:subscription std:token -1 reference/expressions.html#grammar-token-python-grammar-subscription -
 python-grammar:suite std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-suite -
 python-grammar:target std:token -1 reference/simple_stmts.html#grammar-token-python-grammar-target -
@@ -17282,13 +17292,13 @@ python-grammar:try2_stmt std:token -1 reference/compound_stmts.html#grammar-toke
 python-grammar:try3_stmt std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-try3_stmt -
 python-grammar:try_stmt std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-try_stmt -
 python-grammar:tstring std:token -1 reference/lexical_analysis.html#grammar-token-python-grammar-tstring -
+python-grammar:tuple_subscript std:token -1 reference/expressions.html#grammar-token-python-grammar-tuple_subscript -
 python-grammar:type_param std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-type_param -
 python-grammar:type_params std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-type_params -
 python-grammar:type_stmt std:token -1 reference/simple_stmts.html#grammar-token-python-grammar-type_stmt -
 python-grammar:typevar std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-typevar -
 python-grammar:typevartuple std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-typevartuple -
 python-grammar:u_expr std:token -1 reference/expressions.html#grammar-token-python-grammar-u_expr -
-python-grammar:upper_bound std:token -1 reference/expressions.html#grammar-token-python-grammar-upper_bound -
 python-grammar:value_pattern std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-value_pattern -
 python-grammar:while_stmt std:token -1 reference/compound_stmts.html#grammar-token-python-grammar-while_stmt -
 python-grammar:whitespace std:token -1 reference/lexical_analysis.html#grammar-token-python-grammar-whitespace -
@@ -17562,7 +17572,8 @@ subclassing-reprs std:label -1 library/reprlib.html#$ Subclassing Repr Objects
 subprocess-replacements std:label -1 library/subprocess.html#$ Replacing Older Functions with the subprocess Module
 subprocess-security std:label -1 library/subprocess.html#$ Security Considerations
 subprocess-timeout-behavior std:label -1 library/subprocess.html#$ Timeout Behavior
-subscriptions std:label -1 reference/expressions.html#$ Subscriptions
+subscript std:term -1 glossary.html#term-$ -
+subscriptions std:label -1 reference/expressions.html#$ Subscriptions and slicings
 subtests std:label -1 library/unittest.html#$ Distinguishing test iterations using subtests
 superseded std:label -1 library/superseded.html#$ Superseded Modules
 supporting-cycle-detection std:label -1 c-api/gcsupport.html#$ Supporting Cyclic Garbage Collection
